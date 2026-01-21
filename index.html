@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    
+    // Consent initialization - Default to Granted (as requested)
+    gtag('consent', 'default', {
+      'ad_storage': 'granted',
+      'ad_user_data': 'granted',
+      'ad_personalization': 'granted',
+      'analytics_storage': 'granted',
+      'personalization_storage': 'granted',
+      'functionality_storage': 'granted',
+      'security_storage': 'granted'
+    });
+  </script>
+  <!-- Google tag (gtag.js) - DEV ENVIRONMENT -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3B65F4GC1"></script>
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'G-C3B65F4GC1', { 'debug_mode': true });
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Arman Haeri - CV [DEV]</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dev-banner">⚠️ Development Environment - Not for Production Use</div>
+  <canvas id="particles"></canvas>
+  <div class="layout">
+    <header class="sidebar">
+      <h1>Arman Haeri</h1>
+      <img src="profile-pic.jpg" alt="Arman Haeri" class="profile-pic">
+      <nav class="nav"><a href="#summary">Summary</a><a href="#core-competencies">Core Competencies</a><div class="nav-item" id="nav-experience"><a href="#professional-experience">Professional Experience</a><div class="nav-sub"><a href="#independent-software-engineer-startup-founder">Independent Software Engineer (Startup Founder)</a><a href="#azure-consultant--codit-pt-portugal-remote">Azure Consultant — Codit PT (Portugal, remote)</a><a href="#integration-consultant--codit-pt-portugal-remote">Integration Consultant — Codit PT (Portugal, remote)</a><a href="#dev-support-engineer--microsoft-lisbon-portugal-remote">Dev Support Engineer — Microsoft (Lisbon, Portugal, remote)</a><a href="#lead-developer--azure-integration--newhotel-software-lisbon-portugal-hybrid">Lead Developer / Azure Integration — Newhotel Software (Lisbon, Portugal, hybrid)</a><a href="#freelance-developer">Freelance Developer</a><a href="#lead-net--android-developer--shirin-asal-iran-on-site">Lead .NET & Android Developer — Shirin Asal (Iran, on-site)</a></div></div><a href="#current-top-technical-interests-in-order">Current Top Technical Interests (in order)</a><a href="#personal-interests">Personal Interests</a><a href="#download-cv">Download CV</a></nav>
+      <div class="social">
+        <a href="mailto:haeri.arman@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/armanhaeri/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/CyberEgo/" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </header>
+    <main class="main">
+<h1>Arman Haeri</h1>
+<p><strong>Senior Azure Consultant | AI &amp; Integration | Technical Discovery &amp; POCs | .NET | VR/XR ᯅ</strong></p>
+
+<h2 id="summary">Summary</h2>
+<p>Senior Software Engineer with 20+ years in IT, including 10+ years of experience building and operating cloud-native systems with Microsoft Azure and .NET. Strong background in distributed systems, CI/CD automation, and developer enablement (SDKs, tooling, documentation). Currently architecting a cross-platform automation product: .NET Aspire backend with MCP-based plugin orchestration, Unity desktop/mobile clients, and AI-assisted workflows.</p>
+
+<h2 id="core-competencies">Core Competencies</h2>
+<ul>
+<li><strong>Cloud:</strong> Azure (Functions, App Service, Container Apps, Logic Apps, Service Bus, Storage, Key Vault, APIM, RBAC, IAM, OAuth2, OIDC)</li>
+<li><strong>Software Design:</strong> Clean Architecture, DDD, TDD, patterns (repository, factory, adapter, decorator, observer, plugin/extensibility)</li>
+<li><strong>Cloud Patterns:</strong> Publisher/Subscriber, Queue-Based Load Leveling, CQRS, Saga; resilience (Retry, Circuit Breaker, Bulkhead)</li>
+<li><strong>Backend:</strong> C# / .NET, Python, .NET Aspire, MCP Server/Client, Web APIs/BFF, EF Core, OpenAPI Spec, n8n (service prototyping)</li>
+<li><strong>DevOps &amp; IaC:</strong> GitHub Actions, Azure DevOps, Docker, Bicep, GitHub CLI, Azure CLI, PowerShell, Bash</li>
+<li><strong>AI &amp; Agent Development:</strong> Azure AI Foundry, Microsoft.Agents SDK, Semantic Kernel, tool-calling models, MCP integration, agent orchestration</li>
+<li><strong>Data &amp; RAG:</strong> Azure SQL, PostgreSQL, Cosmos DB, embedding models, vector search</li>
+<li><strong>Testing &amp; Quality:</strong> xUnit, integration testing, pipeline quality gates</li>
+<li><strong>Client &amp; Tooling:</strong> Unity, Blazor, SDK/NuGet design, automation tooling</li>
+<li><strong>Technical Documentation:</strong> Architecture diagrams (PlantUML, Mermaid, Draw.io), Docusaurus, ADRs</li>
+<li><strong>Observability:</strong> OpenTelemetry, Application Insights, Log Analytics, KQL</li>
+<li><strong>AI-Assisted Development:</strong> GitHub Copilot, Claude Code, Codex, agentic workflows; prompt engineering, Perplexity</li>
+</ul>
+
+<h2 id="professional-experience">Professional Experience</h2>
+<h3 id="independent-software-engineer-startup-founder">Independent Software Engineer (Startup Founder)</h3>
+<p><strong>Sep 2024 – Present</strong><br><strong>Project:</strong> Cross-platform Automation App</p>
+<ul>
+<li>Architected and led development of backend services using <strong>.NET 8</strong> and <strong>.NET Aspire</strong>, covering authentication, licensing, and plugin orchestration via <strong>WebSockets</strong>, <strong>JSON schema contracts</strong>, and <strong>MCP-style interfaces</strong>.</li>
+<li>Built an <strong>AI Voice Agent</strong> system integrating <strong>Azure AI Foundry</strong>, <strong>Semantic Kernel</strong>, and tool-calling capabilities; supports multi-model switching (Azure OpenAI, Anthropic Claude, GitHub Copilot models) with dynamic endpoint abstraction.</li>
+<li>Implemented <strong>MCP tool integration</strong> enabling the AI agent to discover and invoke external tools dynamically.</li>
+<li>Implemented authentication and SSO with <strong>Azure AD B2C</strong> (<strong>OIDC/OAuth2</strong>), enforcing scoped access via claims-/policy-based authorization and <strong>RBAC</strong>.</li>
+<li>Designed and delivered cross-platform <strong>Unity</strong> clients (Windows desktop &amp; Android) for profile management, automation workflow authoring, plugin lifecycle control.</li>
+<li>Designed and published a <strong>Plugin SDK</strong> (<strong>NuGet</strong> + GitHub samples) enabling CLI-invoked extensions with standardized JSON contracts.</li>
+<li>Built an <strong>Azure-hosted marketplace portal</strong> for user accounts, license management, plugin distribution, contributor onboarding, and documentation; integrated <strong>Stripe</strong> (payment gateway) using <strong>webhooks</strong> to automate billing workflows.</li>
+<li>Implemented automated build, packaging, and deployment pipelines using <strong>GitHub Actions, AZD, Bicep, PowerShell, YAML</strong>, and <strong>Docker</strong>.</li>
+<li>Delivered signed installers using <strong>WiX (MSI)</strong> with update channels and rollback support.</li>
+<li>Implemented CI/CD quality gates in <strong>GitHub Actions</strong> (build, tests, static analysis, dependency scanning) and set up observability with <strong>OpenTelemetry</strong>, <strong>Application Insights</strong>, and <strong>Log Analytics</strong>.</li>
+<li>Authored developer and user documentation to support onboarding and extension development (Docusaurus, Markdown, Mermaid).</li>
+</ul>
+<p><strong>Technologies:</strong> .NET 8, .NET Aspire, EF Core, Azure SQL, Azure Storage, RBAC, Key Vault, Azure AI Foundry, Microsoft.Agents SDK, Semantic Kernel, MCP, Unity (IL2CPP), Blazor, OAuth2, OIDC, Azure AD B2C, NuGet, Stripe, GitHub Actions, AZD, Bicep, Docker, WiX/MSIX, OpenTelemetry</p>
+
+<h3 id="azure-consultant-codit-pt-portugal-remote">Azure Consultant — Codit PT (Portugal, remote)</h3>
+<h4>Customer: Port of Antwerp · Project: NxtPort (Belgium, remote)</h4>
+<p><strong>Jan 2024 – Aug 2024</strong></p>
+<ul>
+<li>Researched and implemented semi-automated <strong>BFF/backend scaffolding</strong> from <strong>OpenAPI specifications</strong> using <strong>NSwag</strong> to accelerate service scaffolding and standardize API contracts.</li>
+<li>Designed and delivered <strong>CI/CD pipelines</strong> in <strong>Azure DevOps</strong>, including quality gates for build, automated tests, and deployment.</li>
+<li>Authored and maintained <strong>xUnit</strong> unit tests and contributed to <strong>integration test</strong> suites; wired both into the pipeline to improve reliability.</li>
+<li>Implemented/maintained <strong>API versioning</strong>, and improved observability via structured logging and <strong>Log Analytics</strong> integration.</li>
+<li>Integrated a <strong>third-party B2C identity provider</strong> (<strong>OIDC/OAuth2</strong>) into the backend authentication and authorization flow.</li>
+</ul>
+<p><strong>Technologies:</strong> Azure Container Apps, ACR, Azure DevOps, Storage Accounts, RBAC/IAM, OAuth2, APIM, Key Vault, Azure SQL, Service Bus, Application Insights, Log Analytics, .NET 8, xUnit, PowerShell, Bicep</p>
+<h4>Customer: Codit Customer Care · Project: Azure Alert Enricher (Belgium, remote)</h4>
+<p><strong>Oct 2023 – Jan 2024</strong></p>
+<ul>
+<li>Designed and developed a tool to enrich monitoring alerts by querying <strong>Azure Resource Graph</strong> and <strong>ARM APIs</strong> for resource metadata (subscription/resource group, resource type/name, region, tags).</li>
+<li>Implemented an end-to-end CI/CD pipeline in <strong>GitHub Actions</strong> (build/test, Docker image build + publish to <strong>ACR</strong>, and automated deployments).</li>
+</ul>
+<p><strong>Technologies:</strong> Azure Resource Graph, ARM APIs, Container Apps, ACR, GitHub Actions, Key Vault, .NET 6, Bicep, PowerShell, Bash</p>
+
+<h3 id="integration-consultant-codit-pt-portugal-remote">Integration Consultant — Codit PT (Portugal, remote)</h3>
+<p><strong>Mar 2023 – Oct 2023</strong><br><strong>Customer:</strong> Hiscox UK (remote) · <strong>Project:</strong> Nexus Integration Platform</p>
+<ul>
+<li>Contributed to migration planning from <strong>Azure App Service Environment (ASE) v2</strong> to a cost-optimized Azure hosting model centered on <strong>Azure Functions</strong>.</li>
+<li>Implemented network isolation (<strong>VNet integration</strong>, <strong>NSGs</strong>, <strong>UDRs</strong>, <strong>Private Endpoints</strong>) for key dependencies including <strong>Service Bus</strong>, <strong>Storage Accounts</strong>, <strong>Key Vault</strong>, and <strong>API Management</strong>.</li>
+<li>Provisioned and updated infrastructure using <strong>Terraform</strong>; adapted application code and CI/CD pipelines for the new deployment and networking model.</li>
+<li>Defined and executed a migration validation plan (connectivity, Service Bus message flows, APIM routing/policies) and updated project documentation.</li>
+</ul>
+<p><strong>Technologies:</strong> Azure Functions, Logic Apps, Storage Accounts, Key Vault, Service Bus, Application Insights, Log Analytics, APIM, VNET, Azure DevOps, RBAC/IAM, KQL, Terraform</p>
+
+<h3 id="dev-support-engineer-microsoft-lisbon-portugal-remote">Dev Support Engineer — Microsoft (Lisbon, Portugal, remote)</h3>
+<p><strong>Dec 2021 – Apr 2023</strong></p>
+<ul>
+<li>Troubleshot production incidents and configuration issues for <strong>Azure Function Apps</strong> and <strong>App Service</strong> for enterprise customers (Premier/ProDirect SLAs).</li>
+<li>Aggregated telemetry and logs across customer environments and performed deep-dive investigations using <strong>KQL</strong> (Application Insights, Log Analytics, Azure Data Explorer) to identify root causes and mitigations.</li>
+<li>Led/participated in incident triage with Technical Support Managers and coordinated with internal SMEs for complex cross-team escalations.</li>
+</ul>
+<p><strong>Technologies:</strong> Function Apps, App Services, C#, PowerShell, Azure CLI, Bash, KQL, Application Insights, Log Analytics, Azure Data Explorer, ARM templates</p>
+
+<h3 id="lead-developer-azure-integration-newhotel-software-lisbon-portugal-hybrid">Lead Developer / Azure Integration — Newhotel Software (Lisbon, Portugal, hybrid)</h3>
+<p><strong>May 2019 – Oct 2021</strong></p>
+<ul>
+<li>Led design and POC development of distributed integration solutions using <strong>Azure Service Bus, Functions, Logic Apps, and Blob Storage</strong>; drove implementation and knowledge transfer.</li>
+<li>Built ETL pipelines and reporting systems.</li>
+<li>Developed mobile applications for hotel guests (check-in/out, smart device integration).</li>
+<li>Migrated PMS systems to <strong>.NET Core</strong> and refactored shared libraries into <strong>NuGet packages</strong>.</li>
+<li>Contributed to CI/CD pipelines in <strong>Azure DevOps</strong>.</li>
+</ul>
+<p><strong>Technologies:</strong> Azure Service Bus, Function Apps, Logic Apps, C#, .NET Core, Dapper, Oracle, MongoDB, Docker, Ionic (Angular), Stripe APIs, GraphQL, SignalR, Entity Framework</p>
+
+<h3 id="freelance-developer">Freelance Developer</h3>
+<p><strong>Apr 2016 – Present</strong></p>
+<ul>
+<li>Developed Android, PC, and VR games using <strong>Unity3D</strong>.</li>
+<li>Built chatbots for <strong>Discord</strong> and <strong>Twitch</strong>.</li>
+<li>Implemented ML-based skin lesion classification using <strong>CNNs</strong> and <strong>OpenCV</strong>.</li>
+<li>Created Android services for file sync and location sharing.</li>
+<li>Built web applications and small-business websites.</li>
+</ul>
+<p><strong>Technologies:</strong> Unity3D, C#, Python, CNNs, OpenCV, Firebase, Docker, Java, .NET, MSSQL, ASP.NET, Bootstrap</p>
+
+<h3 id="lead-net-amp-android-developer-shirin-asal-iran-on-site">Lead .NET &amp; Android Developer — Shirin Asal (Iran, on-site)</h3>
+<p><strong>Dec 2013 – Apr 2016</strong></p>
+<ul>
+<li>Led technical research, POC development, and solution design; drove implementation and knowledge transfer.</li>
+<li>Implemented new features, refactored and enhanced CRM and POS systems.</li>
+<li>Built socket-based services for GPS data ingestion.</li>
+<li>Developed Android applications integrated with CRM/POS workflows.</li>
+<li>Implemented reporting, data validation, and visualization features; contributed to SEO improvements.</li>
+</ul>
+<p><strong>Technologies:</strong> C#, ASP.NET, MSSQL, Java, SQLite, SOAP Web Services, Google Maps APIs, Teltonika GPS, HTML5, CSS3, JavaScript, D3.js, Bootstrap</p>
+
+<h2 id="current-top-technical-interests-in-order">Current Top Technical Interests (in order)</h2>
+<ul>
+<li>AI Agents (MCP, A2A, Semantic Kernel)</li>
+<li>Microsoft Azure &amp; Azure AI Foundry</li>
+<li>Voice AI (Azure Speech, ElevenLabs)</li>
+<li>VR / AR / XR (Unity)</li>
+<li>C# / .NET</li>
+<li>GenAI </li>
+<li>RAG</li>
+<li>CLI Tools &amp; Automation</li>
+<li>Containerization &amp; DevOps</li>
+<li>PowerShell &amp; KQL</li>
+</ul>
+
+<h2 id="personal-interests">Personal Interests</h2>
+<p>Metaverse, Aviation &amp; Drones, Brain–Computer Interfaces, Automation, Robotics, Psychology, Philosophy</p>
+
+      <div id="download-cv" class="download-section">
+        <a href="arman_haeri_cv.pdf" class="download-btn" id="downloadBtn">
+          <i class="fa-solid fa-file-pdf"></i>
+          <span>Download PDF</span>
+        </a>
+      </div>
+      
+      <footer class="footer">
+        <span>Last updated: January 2026</span>
+        <div class="footer-links">
+          <a href="#" id="privacy-link"><i class="fa-solid fa-shield-halved"></i> Privacy</a>
+        </div>
+      </footer>
+    </main>
+  </div>
+  
+  <div id="consent-banner" class="consent-banner">
+    <div class="consent-header">
+      <h4>Privacy Choices</h4>
+      <p>To analyze traffic and optimize your experience, I use cookies. You may manage your preferences below.</p>
+    </div>
+    
+    <div class="consent-toggles" id="consent-toggles">
+      <div class="toggle-item">
+        <span class="toggle-label">Essential</span>
+        <label class="toggle-switch">
+          <input type="checkbox" checked disabled>
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="toggle-item">
+        <span class="toggle-label">Analytics</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="analytics-toggle" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="toggle-item">
+        <span class="toggle-label">Marketing & Ads</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="marketing-toggle" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="toggle-item">
+        <span class="toggle-label">Personalization</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="personalization-toggle" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="consent-buttons">
+      <button id="consent-manage" class="consent-btn save">Manage Preferences</button>
+      <button id="consent-save" class="consent-btn save" style="display: none;">Save Options</button>
+      <button id="consent-accept" class="consent-btn accept">Accept All</button>
+    </div>
+  </div>
+
+  <script>
+    const sections = document.querySelectorAll('h2[id], h3[id]');
+    const navLinks = document.querySelectorAll('.nav a, .nav-sub a');
+    const navItems = document.querySelectorAll('.nav-item');
+    
+    // Consent Logic
+    const banner = document.getElementById('consent-banner');
+    const savedConsent = localStorage.getItem('consentMode');
+    
+    // Get toggle elements
+    const analyticsToggle = document.getElementById('analytics-toggle');
+    const marketingToggle = document.getElementById('marketing-toggle');
+    const personalizationToggle = document.getElementById('personalization-toggle');
+
+    function updateGtagConsent(analyticsGranted, marketingGranted, personalizationGranted, saveToStorage = true) {
+      const consentState = {
+        'analytics_storage': analyticsGranted ? 'granted' : 'denied',
+        'ad_storage': marketingGranted ? 'granted' : 'denied',
+        'ad_user_data': marketingGranted ? 'granted' : 'denied',
+        'ad_personalization': personalizationGranted ? 'granted' : 'denied',
+        'personalization_storage': personalizationGranted ? 'granted' : 'denied',
+        'security_storage': 'granted',
+        'functionality_storage': 'granted'
+      };
+      
+      console.log('%c[Consent Update]', 'background: #22d3ee; color: #000; padding: 2px 6px; border-radius: 3px;', consentState);
+
+      if (typeof gtag === 'function') { 
+        gtag('consent', 'update', consentState);
+        console.log('%c[gtag] consent update sent', 'color: #22d3ee;');
+      } else {
+        console.warn('[Consent] gtag not available yet');
+      }
+      
+      if (saveToStorage) {
+        localStorage.setItem('consentMode', JSON.stringify({
+          analytics: analyticsGranted,
+          marketing: marketingGranted,
+          personalization: personalizationGranted,
+          timestamp: new Date().toISOString()
+        }));
+        console.log('%c[Consent] Saved to localStorage', 'color: #22d3ee;');
+      }
+    }
+    
+    // Live toggle listeners - update consent immediately when user flips a switch
+    analyticsToggle.addEventListener('change', () => {
+      console.log('[Toggle] Analytics:', analyticsToggle.checked);
+      updateGtagConsent(analyticsToggle.checked, marketingToggle.checked, personalizationToggle.checked, false);
+    });
+    
+    marketingToggle.addEventListener('change', () => {
+      console.log('[Toggle] Marketing:', marketingToggle.checked);
+      updateGtagConsent(analyticsToggle.checked, marketingToggle.checked, personalizationToggle.checked, false);
+    });
+    
+    personalizationToggle.addEventListener('change', () => {
+      console.log('[Toggle] Personalization:', personalizationToggle.checked);
+      updateGtagConsent(analyticsToggle.checked, marketingToggle.checked, personalizationToggle.checked, false);
+    });
+
+    // Show banner if no consent choice is saved
+    if (!savedConsent) {
+      setTimeout(() => banner.classList.add('show'), 1500);
+    } else {
+       // Restore saved consent state
+       try {
+         const consent = JSON.parse(savedConsent);
+         
+         let analytics, marketing, personalization;
+
+         if (consent.analytics !== undefined) {
+           analytics = consent.analytics;
+           marketing = consent.marketing;
+           personalization = consent.personalization;
+         } else {
+           analytics = consent.analytics_storage === 'granted';
+           marketing = consent.ad_storage === 'granted';
+           personalization = consent.ad_personalization === 'granted';
+         }
+
+         // Update GTM with saved preferences
+         updateGtagConsent(analytics, marketing, personalization, false);
+
+         // Sync UI toggles
+         analyticsToggle.checked = analytics;
+         marketingToggle.checked = marketing;
+         personalizationToggle.checked = personalization;
+         
+         console.log('%c[Consent] Restored from localStorage', 'color: #22d3ee;', {analytics, marketing, personalization});
+       } catch (e) {
+         console.error('Error parsing consent', e);
+         localStorage.removeItem('consentMode');
+         banner.classList.add('show');
+       }
+    }
+
+    // Manage Preferences Click
+    document.getElementById('consent-manage').addEventListener('click', () => {
+      document.getElementById('consent-toggles').classList.add('visible');
+      document.getElementById('consent-manage').style.display = 'none';
+      document.getElementById('consent-save').style.display = 'block';
+    });
+
+    // Accept All Button
+    document.getElementById('consent-accept').addEventListener('click', () => {
+      analyticsToggle.checked = true;
+      marketingToggle.checked = true;
+      personalizationToggle.checked = true;
+      
+      updateGtagConsent(true, true, true, true);
+      
+      banner.style.opacity = '0';
+      setTimeout(() => { banner.classList.remove('show'); banner.style.opacity = ''; }, 500);
+    });
+
+    // Save Options Button
+    document.getElementById('consent-save').addEventListener('click', () => {
+      updateGtagConsent(analyticsToggle.checked, marketingToggle.checked, personalizationToggle.checked, true);
+      
+      banner.style.opacity = '0';
+      setTimeout(() => { banner.classList.remove('show'); banner.style.opacity = ''; }, 500);
+    });
+    
+    // Privacy link in footer - opens consent banner
+    document.getElementById('privacy-link').addEventListener('click', (e) => {
+      e.preventDefault();
+      // Show the toggles expanded
+      document.getElementById('consent-toggles').classList.add('visible');
+      document.getElementById('consent-manage').style.display = 'none';
+      document.getElementById('consent-save').style.display = 'block';
+      // Show the banner
+      banner.style.opacity = '';
+      banner.classList.add('show');
+    });
+    
+    function highlightNav() {
+      let currentH2 = '';
+      let currentH3 = '';
+      sections.forEach(s => {
+        if (scrollY >= s.offsetTop - 200) {
+          if (s.tagName === 'H2') currentH2 = s.id;
+          if (s.tagName === 'H3') currentH3 = s.id;
+        }
+      });
+      
+      navLinks.forEach(l => {
+        const href = l.getAttribute('href');
+        l.classList.toggle('active', href === '#' + currentH2 || href === '#' + currentH3);
+      });
+      
+      // Expand Professional Experience nav when scrolling through it
+      navItems.forEach(item => {
+        const link = item.querySelector('a');
+        if (link && link.getAttribute('href') === '#professional-experience') {
+          item.classList.toggle('expanded', currentH2 === 'professional-experience');
+        }
+      });
+    }
+    
+    // Click to toggle expand
+    navItems.forEach(item => {
+      const link = item.querySelector(':scope > a');
+      if (link) {
+        link.addEventListener('click', (e) => {
+          item.classList.toggle('expanded');
+        });
+      }
+    });
+    
+    window.addEventListener('scroll', highlightNav);
+    highlightNav();
+  </script>
+  
+  <script>
+    // Particle Network Animation
+    const canvas = document.getElementById('particles');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    let mouse = { x: null, y: null, radius: 150 };
+    let scroll = { speed: 0, lastY: 0 };
+    
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+    
+    window.addEventListener('mousemove', (e) => {
+      mouse.x = e.x;
+      mouse.y = e.y;
+    });
+    
+    window.addEventListener('mouseout', () => {
+      mouse.x = null;
+      mouse.y = null;
+    });
+    
+    // Track scroll for particle effects
+    window.addEventListener('scroll', () => {
+      const currentY = window.scrollY;
+      scroll.speed = (currentY - scroll.lastY) * 0.3;
+      scroll.lastY = currentY;
+    });
+    
+    class Particle {
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.baseVx = (Math.random() - 0.5) * 0.5;
+        this.baseVy = (Math.random() - 0.5) * 0.5;
+        this.vx = this.baseVx;
+        this.vy = this.baseVy;
+        this.radius = Math.random() * 2 + 1;
+        this.depth = Math.random() * 0.5 + 0.5; // Parallax depth
+      }
+      
+      update() {
+        // Mouse interaction
+        if (mouse.x !== null) {
+          const dx = mouse.x - this.x;
+          const dy = mouse.y - this.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < mouse.radius) {
+            const force = (mouse.radius - dist) / mouse.radius;
+            this.vx -= (dx / dist) * force * 0.5;
+            this.vy -= (dy / dist) * force * 0.5;
+          }
+        }
+        
+        // Scroll interaction - particles flow with scroll
+        this.vy += scroll.speed * this.depth * 0.075;
+        
+        this.x += this.vx;
+        this.y += this.vy;
+        
+        // Damping
+        this.vx *= 0.98;
+        this.vy *= 0.98;
+        
+        // Gradually return to base velocity
+        this.vx += (this.baseVx - this.vx) * 0.01;
+        this.vy += (this.baseVy - this.vy) * 0.01;
+        
+        // Bounds - wrap around
+        if (this.x < -10) this.x = canvas.width + 10;
+        if (this.x > canvas.width + 10) this.x = -10;
+        if (this.y < -10) this.y = canvas.height + 10;
+        if (this.y > canvas.height + 10) this.y = -10;
+      }
+      
+      draw() {
+        // Brightness increases with scroll speed
+        const brightness = Math.min(0.8, 0.5 + Math.abs(scroll.speed) * 0.05);
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(34, 211, 238, ' + brightness + ')';
+        ctx.fill();
+      }
+    }
+    
+    // Create particles
+    for (let i = 0; i < 80; i++) {
+      particles.push(new Particle());
+    }
+    
+    function connectParticles() {
+      // Connection distance increases with scroll speed
+      const connectDist = 150 + Math.abs(scroll.speed) * 2;
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          const dx = particles[i].x - particles[j].x;
+          const dy = particles[i].y - particles[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          
+          if (dist < connectDist) {
+            const alpha = Math.min(0.3, 0.15 + Math.abs(scroll.speed) * 0.02) - dist / (connectDist * 5);
+            ctx.beginPath();
+            ctx.strokeStyle = 'rgba(34, 211, 238, ' + Math.max(0, alpha) + ')';
+            ctx.lineWidth = 1.0;
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.stroke();
+          }
+        }
+      }
+    }
+    
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      
+      // Decay scroll speed
+      scroll.speed *= 0.95;
+      
+      particles.forEach(p => {
+        p.update();
+        p.draw();
+      });
+      connectParticles();
+      
+      // Draw connections from download button to nearby particles
+      if (downloadBtnHovered) {
+        const btnRect = downloadBtn.getBoundingClientRect();
+        const btnCenterX = btnRect.left + btnRect.width / 2;
+        const btnCenterY = btnRect.top + btnRect.height / 2;
+        
+        particles.forEach(p => {
+          const dx = p.x - btnCenterX;
+          const dy = p.y - btnCenterY;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          
+          if (dist < 200) {
+            const alpha = (200 - dist) / 200 * 0.5;
+            ctx.beginPath();
+            ctx.strokeStyle = 'rgba(244, 114, 182, ' + alpha + ')';
+            ctx.lineWidth = 1.5;
+            ctx.moveTo(btnCenterX, btnCenterY);
+            ctx.lineTo(p.x, p.y);
+            ctx.stroke();
+            
+            // Attract particles towards button slightly
+            p.vx += (dx > 0 ? -1 : 1) * 0.02;
+            p.vy += (dy > 0 ? -1 : 1) * 0.02;
+          }
+        });
+      }
+      
+      // Animate burst particles
+      burstParticles = burstParticles.filter(bp => {
+        bp.x += bp.vx;
+        bp.y += bp.vy;
+        bp.life -= 0.02;
+        bp.vy += 0.1; // gravity
+        
+        if (bp.life > 0) {
+          ctx.beginPath();
+          ctx.arc(bp.x, bp.y, bp.radius * bp.life, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(' + bp.color + ', ' + bp.life + ')';
+          ctx.fill();
+          return true;
+        }
+        return false;
+      });
+      
+      requestAnimationFrame(animate);
+    }
+    
+    // Download button interactions
+    const downloadBtn = document.getElementById('downloadBtn');
+    let downloadBtnHovered = false;
+    let burstParticles = [];
+    
+    downloadBtn.addEventListener('mouseenter', () => {
+      downloadBtnHovered = true;
+    });
+    
+    downloadBtn.addEventListener('mouseleave', () => {
+      downloadBtnHovered = false;
+    });
+    
+    downloadBtn.addEventListener('click', (e) => {
+      // Create ripple effect
+      const ripple = document.createElement('span');
+      ripple.classList.add('ripple');
+      const rect = downloadBtn.getBoundingClientRect();
+      ripple.style.left = (e.clientX - rect.left - 10) + 'px';
+      ripple.style.top = (e.clientY - rect.top - 10) + 'px';
+      ripple.style.width = ripple.style.height = '20px';
+      downloadBtn.appendChild(ripple);
+      setTimeout(() => ripple.remove(), 600);
+      
+      // Create particle burst
+      const btnRect = downloadBtn.getBoundingClientRect();
+      const btnCenterX = btnRect.left + btnRect.width / 2;
+      const btnCenterY = btnRect.top + btnRect.height / 2;
+      
+      for (let i = 0; i < 20; i++) {
+        const angle = (Math.PI * 2 / 20) * i + Math.random() * 0.5;
+        const speed = 3 + Math.random() * 5;
+        burstParticles.push({
+          x: btnCenterX,
+          y: btnCenterY,
+          vx: Math.cos(angle) * speed,
+          vy: Math.sin(angle) * speed,
+          radius: 2 + Math.random() * 3,
+          life: 1,
+          color: Math.random() > 0.5 ? '34, 211, 238' : '244, 114, 182'
+        });
+      }
+    });
+    
+    animate();
+  </script>
+  
+  <!-- Chat Widget -->
+  <button class="chat-button" id="chatButton" title="Ask me anything about Arman">
+    <i class="fa-solid fa-comments"></i>
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+  
+  <div class="chat-panel" id="chatPanel">
+    <div class="chat-header">
+      <div class="chat-header-avatar">
+        <i class="fa-solid fa-microchip"></i>
+      </div>
+      <div class="chat-header-info">
+        <h4>AI Assistant</h4>
+        <p>Ask about Arman's experience</p>
+      </div>
+      <div class="chat-header-actions">
+        <button class="chat-header-btn" id="chatExpand" title="Expand">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+        <button class="chat-header-btn" id="chatClose" title="Close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-message bot">
+        Hello! I'm Arman's AI assistant. Feel free to ask about his skills, experience, or background.
+      </div>
+    </div>
+    <div class="chat-input-container">
+      <textarea class="chat-input" id="chatInput" placeholder="Enter query..." rows="1"></textarea>
+      <button class="chat-send" id="chatSend">
+        <i class="fa-solid fa-terminal"></i>
+      </button>
+    </div>
+  </div>
+  
+  <script>
+    // Chat Widget Logic
+    const chatButton = document.getElementById('chatButton');
+    const chatPanel = document.getElementById('chatPanel');
+    const chatMessages = document.getElementById('chatMessages');
+    const chatInput = document.getElementById('chatInput');
+    const chatSend = document.getElementById('chatSend');
+    const chatExpand = document.getElementById('chatExpand');
+    const chatClose = document.getElementById('chatClose');
+    
+    const CHAT_API = 'https://cv-chatbot-dev.work-profile.workers.dev/api/chat';
+    let chatHistory = [];
+    let isLoading = false;
+    
+    // Toggle chat panel
+    chatButton.addEventListener('click', () => {
+      chatButton.classList.toggle('open');
+      chatPanel.classList.toggle('open');
+      if (chatPanel.classList.contains('open')) {
+        chatInput.focus();
+      }
+    });
+    
+    // Close chat from header button
+    chatClose.addEventListener('click', () => {
+      chatButton.classList.remove('open');
+      chatPanel.classList.remove('open');
+    });
+    
+    // Expand/collapse chat panel
+    chatExpand.addEventListener('click', () => {
+      chatPanel.classList.toggle('expanded');
+      const icon = chatExpand.querySelector('i');
+      if (chatPanel.classList.contains('expanded')) {
+        icon.classList.remove('fa-expand');
+        icon.classList.add('fa-compress');
+        chatExpand.title = 'Collapse';
+      } else {
+        icon.classList.remove('fa-compress');
+        icon.classList.add('fa-expand');
+        chatExpand.title = 'Expand';
+      }
+    });
+    
+    // Auto-resize input
+    chatInput.addEventListener('input', () => {
+      chatInput.style.height = 'auto';
+      chatInput.style.height = Math.min(chatInput.scrollHeight, 100) + 'px';
+    });
+    
+    // Send on Enter (Shift+Enter for newline)
+    chatInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        sendMessage();
+      }
+    });
+    
+    chatSend.addEventListener('click', sendMessage);
+    
+    function addMessage(content, isUser = false) {
+      const msg = document.createElement('div');
+      msg.className = 'chat-message ' + (isUser ? 'user' : 'bot');
+      msg.textContent = content;
+      chatMessages.appendChild(msg);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+      return msg;
+    }
+    
+    function showTyping() {
+      const typing = document.createElement('div');
+      typing.className = 'chat-typing';
+      typing.id = 'typingIndicator';
+      typing.innerHTML = '<span></span><span></span><span></span>';
+      chatMessages.appendChild(typing);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+    
+    function hideTyping() {
+      const typing = document.getElementById('typingIndicator');
+      if (typing) typing.remove();
+    }
+    
+    function showError(message) {
+      const err = document.createElement('div');
+      err.className = 'chat-error';
+      err.textContent = message;
+      chatMessages.appendChild(err);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+      setTimeout(() => err.remove(), 5000);
+    }
+    
+    async function sendMessage() {
+      const message = chatInput.value.trim();
+      if (!message || isLoading) return;
+      
+      isLoading = true;
+      chatSend.disabled = true;
+      chatInput.value = '';
+      chatInput.style.height = 'auto';
+      
+      addMessage(message, true);
+      chatHistory.push({ role: 'user', content: message });
+      
+      showTyping();
+      
+      try {
+        const response = await fetch(CHAT_API, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            message: message,
+            history: chatHistory.slice(-10)
+          })
+        });
+        
+        hideTyping();
+        
+        if (response.status === 429) {
+          showError('Rate limit reached. Please try again later.');
+          return;
+        }
+        
+        if (!response.ok) {
+          throw new Error('Failed to get response');
+        }
+        
+        const data = await response.json();
+        
+        if (data.error) {
+          showError(data.error);
+          return;
+        }
+        
+        addMessage(data.reply);
+        chatHistory.push({ role: 'assistant', content: data.reply });
+        
+        // Keep history manageable
+        if (chatHistory.length > 20) {
+          chatHistory = chatHistory.slice(-20);
+        }
+        
+      } catch (error) {
+        hideTyping();
+        console.error('Chat error:', error);
+        showError('Sorry, something went wrong. Please try again.');
+      } finally {
+        isLoading = false;
+        chatSend.disabled = false;
+        chatInput.focus();
+      }
+    }
+  </script>
+</body>
+</html>
