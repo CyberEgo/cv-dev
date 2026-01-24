@@ -725,10 +725,22 @@
     
     chatSend.addEventListener('click', sendMessage);
     
+    // Format message: escape HTML, convert URLs to links, convert newlines to <br>
+    function formatMessage(text) {
+      // Escape HTML to prevent XSS
+      const escaped = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      // Convert URLs to clickable links
+      const withLinks = escaped.replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>');
+      // Convert email addresses to mailto links
+      const withEmails = withLinks.replace(/([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g, '<a href="mailto:$1">$1</a>');
+      // Convert newlines to <br>
+      return withEmails.replace(/\n/g, '<br>');
+    }
+
     function addMessage(content, isUser = false) {
       const msg = document.createElement('div');
       msg.className = 'chat-message ' + (isUser ? 'user' : 'bot');
-      msg.textContent = content;
+      msg.innerHTML = formatMessage(content);
       chatMessages.appendChild(msg);
       chatMessages.scrollTop = chatMessages.scrollHeight;
       return msg;
