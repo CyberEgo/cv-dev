@@ -331,6 +331,57 @@ body::before {
   margin-bottom: 32px;
 }
 
+/* Connect/Book a Call Section */
+.connect-section {
+  margin-top: 48px;
+  padding: 32px;
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.connect-section h2 {
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+  color: var(--accent-cyan);
+}
+
+.connect-section p {
+  margin-bottom: 24px;
+  color: var(--text-muted);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.book-call-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0a0a0f;
+  background: var(--accent-cyan);
+  border: 2px solid var(--accent-cyan);
+  border-radius: 6px;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.book-call-btn:hover {
+  background: transparent;
+  color: var(--accent-cyan) !important;
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.4);
+}
+
+.book-call-btn:hover i,
+.book-call-btn:hover span {
+  color: var(--accent-cyan) !important;
+}
+
 .footer {
   margin-top: 64px;
   padding: 24px 0;
