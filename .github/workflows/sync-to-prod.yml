@@ -1,0 +1,68 @@
+name: Sync to Production
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'style.css'
+      - '*.js'
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    name: Sync to cv-publish
+    
+    steps:
+      - name: Checkout cv-dev
+        uses: actions/checkout@v4
+        with:
+          path: cv-dev
+
+      - name: Checkout cv-publish
+        uses: actions/checkout@v4
+        with:
+          repository: CyberEgo/cv-publish
+          token: ${{ secrets.CV_DEPLOY_TOKEN }}
+          path: cv-publish
+
+      - name: Sync files
+        run: |
+          # Copy frontend files (not the CV markdown - that's separate)
+          cp cv-dev/index.html cv-publish/index.html
+          cp cv-dev/style.css cv-publish/style.css
+          
+          # Copy any JS files if they exist
+          if ls cv-dev/*.js 1>/dev/null 2>&1; then
+            cp cv-dev/*.js cv-publish/
+          fi
+          
+          # Update chatbot URL from dev to prod
+          sed -i 's/cv-chatbot-dev\.work-profile\.workers\.dev/cv-chatbot.work-profile.workers.dev/g' cv-publish/index.html
+
+      - name: Commit and push
+        working-directory: cv-publish
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Check if there are changes
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No changes to sync"
+            exit 0
+          fi
+          
+          git add -A
+          git commit -m "sync: Update from cv-dev (${{ github.sha }})"
+          git push
+
+      - name: Summary
+        run: |
+          echo "## ✅ Synced to Production" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Files synced from cv-dev to cv-publish:" >> $GITHUB_STEP_SUMMARY
+          echo "- index.html" >> $GITHUB_STEP_SUMMARY
+          echo "- style.css" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Chatbot URL updated: \`cv-chatbot-dev\` → \`cv-chatbot\`" >> $GITHUB_STEP_SUMMARY
