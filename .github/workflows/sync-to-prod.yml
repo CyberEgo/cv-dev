@@ -40,6 +40,19 @@ jobs:
           
           # Update chatbot URL from dev to prod
           sed -i 's/cv-chatbot-dev\.work-profile\.workers\.dev/cv-chatbot.work-profile.workers.dev/g' cv-publish/index.html
+          
+          # Remove dev-specific elements
+          # 1. Remove dev banner
+          sed -i '/<div class="dev-banner">/d' cv-publish/index.html
+          
+          # 2. Update title (remove [DEV])
+          sed -i 's/<title>Arman Haeri - CV \[DEV\]<\/title>/<title>Arman Haeri - CV<\/title>/g' cv-publish/index.html
+          
+          # 3. Remove noindex/nofollow for prod (allow search engines to index)
+          sed -i '/<meta name="robots" content="noindex, nofollow">/d' cv-publish/index.html
+          
+          # 4. Update Google Analytics comment
+          sed -i 's/DEV ENVIRONMENT/PRODUCTION/g' cv-publish/index.html
 
       - name: Commit and push
         working-directory: cv-publish
