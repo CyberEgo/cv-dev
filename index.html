@@ -810,6 +810,13 @@
           return;
         }
         
+        if (response.status === 503) {
+          const retryAfter = response.headers.get('Retry-After');
+          const waitSec = retryAfter ? parseInt(retryAfter) : 30;
+          showError('The AI is temporarily busy. Please wait ' + waitSec + ' seconds and try again.');
+          return;
+        }
+        
         if (!response.ok) {
           throw new Error('Failed to get response');
         }
