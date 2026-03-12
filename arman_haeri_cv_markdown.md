@@ -51,7 +51,7 @@ Senior Software Engineer with 20+ years in IT, including 10+ years of experience
 - **Data & RAG:** Azure SQL, PostgreSQL, Cosmos DB, embedding models, vector search
 - **Testing & Quality:** xUnit, integration testing, pipeline quality gates
 - **Client & Tooling:** Unity, Blazor, SDK/NuGet design, automation tooling
-- **Technical Documentation:** Architecture diagrams (PlantUML, Mermaid, Draw.io), Docusaurus, ADRs
+- **Technical Documentation:** Solution design documents, API specs, ADRs, operational runbooks, architecture diagrams (PlantUML, Mermaid, Draw.io), Docusaurus
 - **Observability:** OpenTelemetry, Application Insights, Log Analytics, KQL
 - **AI-Assisted Development:** GitHub Copilot, Claude Code, Codex, agentic workflows; prompt engineering, Perplexity
 
