@@ -849,6 +849,15 @@ input:disabled + .slider {
   border: 1px solid rgba(244, 114, 182, 0.3);
   border-right: 3px solid var(--accent-pink);
 }
+.chat-message.bot a {
+  color: var(--accent-cyan);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  word-break: break-all;
+}
+.chat-message.bot a:hover {
+  opacity: 0.8;
+}
 
 .chat-typing {
   display: flex;
